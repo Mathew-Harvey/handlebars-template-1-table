@@ -1,94 +1,56 @@
 <main> 
 
 
-    <h1>Report</h1>
-    <h2> {{data.vessel.data.name}} Biofouling Inspection</h2>
-    <h3>NSM</h3>
-    <h3>Date: April 2021</h3>
-    <div id="coverImg">
-        {{!-- images not working yet --}}
-        <img src="../public/assets/hmas_Arunta.jpg">
-    </div>
+    <h1>Mooring Inspection Report</h1>
+
     <div class="report-container">
-        <script id="report-container" type="text/x-handlebars-template"></script>
-        <style>
-            table {
-                font-family: arial, sans-serif;
-                border-collapse: collapse;
-                width: 100%;
-            }
 
-            td,
-            th {
-                border: 1px solid #dddddd;
-                text-align: left;
-                padding: 8px;
-            }
 
-            tr:nth-child(even) {
-                background-color: #dddddd;
-            }
-        </style>
-        </head>
-        <h2>Project Particulars</h2>
         <table>
             <tr>
-                <td><b>Diving Contractor</b></td>
-                <td>Franmarine Underwater Services</td>
+                <td id='grey'><b>Mooring ID</b></td>
+                <td>{{a}}</td>
+                <td id='grey'><b>Mooring Control Area</b></td>
+                <td>{{a}}</td>
             </tr>
             <tr>
-                <td><b>Project</b></td>
-                <td>{{{data.scopeOfWork}}}</td>
+                <td id='grey'><b>Easting</b></td>
+                <td>{{a}}</td>
+                <td id='grey'><b>MMD Centre</b></td>
+                <td>{{a}}</td>
             </tr>
             <tr>
-                <td><b>Vessel</b></td>
-                <td>{{data.vessel.data.name}}</td>
+                <td id='grey'><b>Northing</b></td>
+                <td>{{a}}</td>
+                <td id='grey'><b>MMD in MSR</b></td>
+                <td>{{a}}</td>
             </tr>
             <tr>
-                <td><b>Client</b></td>
-                <td>NSM Australia</td>
+                <td id='grey'><b>Maximum Vessel Length</b></td>
+                <td>{{a}}</td>
+                <td id='grey'><b>Tonnage</b></td>
+                <td>{{a}}</td>
             </tr>
             <tr>
-                <td><b>Client Rep</b></td>
-                <td>{{data.invites.buyer.[0].name}}</td>
+                <td id='grey'><b>Maximum Swing Room</b></td>
+                <td>{{a}}</td>
+                <td id='grey'><b>Buoy Swing Radius</b></td>
+                <td>{{a}}</td>
             </tr>
             <tr>
-                <td><b>Date</b></td>
-                <td>{{data.delivery.actualDate.date}}</td>
+                <td id='grey'><b>Distance to Nearest Mooring</b></td>
+                <td>{{a}}</td>
+                <td id='grey'><b>ID of Nearest Mooring</b></td>
+                <td>{{a}}</td>
             </tr>
             <tr>
-                <td><b>Job Location</b></td>
-                <td>{{data.location.data.portName}}, {{data.location.data.regionName}} </td>
-            </tr>
-            <tr>
-                <td><b>Project Manager</b></td>
-                <td>{{data.invites.supplier.[0].name}}</td>
+                <td id='grey'><b>Diver</b></td>
+                <td>{{a}}</td>
+                <td id='grey'><b>Inspection Date</b></td>
+                <td>{{a}}</td>
             </tr>
 
-            <tr>
-                <td><b>Dive Team Supervisor</b></td>
-                <td>{{data.invites.supervisor.[0].name}}</td>
-            </tr>
-            <tr>
-                <td><b>Dive Team Member 1</b></td>
-                <td>{{data.invites.divers.[0].name}}</td>
-            </tr>
-            </tr>
-            <tr>
-                <td><b>Dive Team Member 2</b></td>
-                <td>{{data.invites.divers.[1].name}}</td>
-            </tr>
-            </tr>
-            <tr>
-                <td><b>Dive Team Member 3</b></td>
-                <td>{{data.invites.divers.[2].name}}</td>
-            </tr>
-            </tr>
-            <tr>
-                <td><b>Dive Team Member 4</b></td>
-                <td>{{data.invites.divers.[3].name}}</td>
-            </tr>
-            </tr>
+
 
         </table>
         <h2>Vessel Particulars</h2>
@@ -471,7 +433,7 @@
             <img src="../public/assets/temp.png">
         </div>
 
-      <h3>Aft Hull Plate</h3>
+        <h3>Aft Hull Plate</h3>
         <p>{{{data.hullPlating.hullPlatingAftHull.comments}}}</p>
         <h3>Aft hull plate images</h3>
         <div id="image">
@@ -480,7 +442,7 @@
         </div>
 
 
-      <h3>Transom Plate</h3>
+        <h3>Transom Plate</h3>
         <p>{{{data.hullPlating.hullPlatingTransom.comments}}}</p>
         <h3>Transom plate images</h3>
         <div id="image">
@@ -489,7 +451,7 @@
         </div>
 
 
-      <h2>Report Summary</h2>
+        <h2>Report Summary</h2>
         <p>{{{data.report.summary}}}</p>
         <h3>Transom plate images</h3>
         <div id="image">

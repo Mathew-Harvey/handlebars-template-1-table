@@ -36,6 +36,10 @@ app.get("/static", (req, res) => {
 app.get('/', (req, res) => {
     res.render("main",
 
+
+//Json goes here
+
+
         {
             "name": "Overview",
             "action": "Franmarine Underwater Services Pty Ltd have been appointed by Naval Ship Management (NSM) to conduct a post in-water hull clean (IWHC) Biofouling Inspection (BFI) on the vessel HMAS Arunta. The inspection was conducted by qualified divers trained in under water inspection techniques and all activities were carried out in accordance with client requirements and time schedules. Diving operations were conducted from AMC in strict accordance with Occupational Diving Operations AS/NZS 2299.1:2015.",
