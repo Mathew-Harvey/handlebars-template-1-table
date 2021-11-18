@@ -3,43 +3,49 @@
 
 <head>
     <style>
-
         * {
             font-family: Arial, Helvetica, sans-serif;
         }
+
         h1 {
             text-align: center;
             font-size: 1.3em;
             text-transform: uppercase;
         }
+
         table {
             font-family: arial, sans-serif;
             border-collapse: collapse;
             width: 100%;
+            margin-bottom: 3px;
         }
+
         td,
         th {
             border: 1px solid #dddddd;
             text-align: left;
             padding: 8px;
+            border: 1px solid black;
+        }
+
+        .noBorder {
+            border: none !important;
+           padding-top: 50px;
+           padding-bottom: 50px;
+            
+        }
+        .signatureBox {
+  
+            padding-bottom: 70px;
         }
         #grey {
             background-color: #dddddd;
-        }
-
-        table, th, td {
-            border: 1px solid black;
         }
     </style>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Franmarine Test Report Handlebars</title>
-    {{!--
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> --}}
-    {{!-- Page breaks needs attion --}}
-    {{!--
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.4.1/paper.css"> --}}
+    <title>Mooring Inspection Report</title>
     {{#each css}}
     <link rel="stylesheet" href="/{{this}}">
     {{/each}}
