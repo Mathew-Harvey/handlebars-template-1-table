@@ -11,45 +11,45 @@
             <col style="width:25%">
             <tr>
                 <td id='grey'><b>Mooring ID</b></td>
-                <td>{{a}}</td>
+                <td>{{data.mooringDetails.[0].mooringId}}</td>
                 <td id='grey'><b>Mooring Control Area</b></td>
-                <td>{{a}}</td>
+                <td>{{data.mooringDetails.[0].mooringControlArea}}</td>
             </tr>
             <tr>
                 <td id='grey'><b>Easting</b></td>
-                <td>{{a}}</td>
+                <td>{{data.mooringDetails.[0].easting}}</td>
                 <td id='grey'><b>MMD Centre</b></td>
-                <td>{{a}}</td>
+                <td>{{data.mooringDetails.[0].mmdCentre}}</td>
             </tr>
             <tr>
                 <td id='grey'><b>Northing</b></td>
-                <td>{{a}}</td>
+                <td>{{data.mooringDetails.[0].northing}}</td>
                 <td id='grey'><b>MMD in MSR</b></td>
-                <td>{{a}}</td>
+                <td>{{data.mooringDetails.[0].mmdMsr}}</td>
             </tr>
             <tr>
                 <td id='grey'><b>Maximum Vessel Length</b></td>
-                <td>{{a}}</td>
+                <td>{{data.mooringDetails.[0].maxVesselLength}}</td>
                 <td id='grey'><b>Tonnage</b></td>
-                <td>{{a}}</td>
+                <td>{{data.mooringDetails.[0].tonnage}}</td>
             </tr>
             <tr>
                 <td id='grey'><b>Maximum Swing Room</b></td>
-                <td>{{a}}</td>
+                <td>{{data.mooringDetails.[0].maxSwingRoom}}</td>
                 <td id='grey'><b>Buoy Swing Radius</b></td>
-                <td>{{a}}</td>
+                <td>{{data.mooringDetails.[0].buoySwingRadius}}</td>
             </tr>
             <tr>
                 <td id='grey'><b>Distance to Nearest Mooring</b></td>
-                <td>{{a}}</td>
+                <td>{{data.mooringDetails.[0].distanceToNearestMooring}}</td>
                 <td id='grey'><b>ID of Nearest Mooring</b></td>
-                <td>{{a}}</td>
+                <td>{{data.mooringDetails.[0].idOfNearestMooring}}</td>
             </tr>
             <tr>
                 <td id='grey'><b>Diver</b></td>
-                <td>{{a}}</td>
+                <td>{{data.invites.divers.[0].name}}</td>
                 <td id='grey'><b>Inspection Date</b></td>
-                <td>{{a}}</td>
+                <td>{{data.mooringDetails.[0].inspectionDate}}</td>
             </tr>
 
         </table>
@@ -58,18 +58,15 @@
             <tr>
                 <td id='grey'><b>Components</b></td>
                 <td id='grey'><b>Description</b></td>
-                <td id='grey'><b>2020 {{lastyeargoeshere}} Inspection</b></td>
-                <td id='grey'><b>2021 {{currentyeargoeshere}} Inspection %</b></td>
+                <td id='grey'><b>{{previousYear}} Inspection</b></td>
+                <td id='grey'><b>{{year}} Inspection %</b></td>
                 <td id='grey'><b>Size of Chain (mm)</b></td>
                 <td id='grey'><b>Comments</b></td>
             </tr>
             <tr>
                 <td>Surface Buoy</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>{{data.inspectionDetails.[0].components.surfaceBuoy.[0].description}}</td>
+           
             </tr>
             <tr>
                 <td>SF Mooring ID Number <sup>*</sup></td>
