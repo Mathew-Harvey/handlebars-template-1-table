@@ -1,3 +1,4 @@
+
 {
     "What": "Mooring Inspection",
     "who": "Rottnest Island Management",
@@ -8,6 +9,11 @@
     "workCode": "",
     "lastModified": "2021-07-16T03:08:48+00:00",
     "messages": null,
+    "attachements":[
+        {
+            "fullUri":""
+        }
+    ],
     "data": {
         "invites": {
             "buyer": [
