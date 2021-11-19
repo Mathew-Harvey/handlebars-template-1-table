@@ -11,45 +11,45 @@
             <col style="width:25%">
             <tr>
                 <td id='grey'><b>Mooring ID</b></td>
-                <td>{{data.mooringDetails.[0].mooringId}}</td>
+                <td>{{data.mooringDetails.mooringId}}</td>
                 <td id='grey'><b>Mooring Control Area</b></td>
-                <td>{{data.mooringDetails.[0].mooringControlArea}}</td>
+                <td>{{data.mooringDetails.mooringControlArea}}</td>
             </tr>
             <tr>
                 <td id='grey'><b>Easting</b></td>
-                <td>{{data.mooringDetails.[0].easting}}</td>
+                <td>{{data.mooringDetails.easting}}</td>
                 <td id='grey'><b>MMD Centre</b></td>
-                <td>{{data.mooringDetails.[0].mmdCentre}}</td>
+                <td>{{data.mooringDetails.mmdCentre}}</td>
             </tr>
             <tr>
                 <td id='grey'><b>Northing</b></td>
-                <td>{{data.mooringDetails.[0].northing}}</td>
+                <td>{{data.mooringDetails.northing}}</td>
                 <td id='grey'><b>MMD in MSR</b></td>
-                <td>{{data.mooringDetails.[0].mmdMsr}}</td>
+                <td>{{data.mooringDetails.mmdMsr}}</td>
             </tr>
             <tr>
                 <td id='grey'><b>Maximum Vessel Length</b></td>
-                <td>{{data.mooringDetails.[0].maxVesselLength}}</td>
+                <td>{{data.mooringDetails.maxVesselLength}}</td>
                 <td id='grey'><b>Tonnage</b></td>
-                <td>{{data.mooringDetails.[0].tonnage}}</td>
+                <td>{{data.mooringDetails.tonnage}}</td>
             </tr>
             <tr>
                 <td id='grey'><b>Maximum Swing Room</b></td>
-                <td>{{data.mooringDetails.[0].maxSwingRoom}}</td>
+                <td>{{data.mooringDetails.maxSwingRoom}}</td>
                 <td id='grey'><b>Buoy Swing Radius</b></td>
-                <td>{{data.mooringDetails.[0].buoySwingRadius}}</td>
+                <td>{{data.mooringDetails.buoySwingRadius}}</td>
             </tr>
             <tr>
                 <td id='grey'><b>Distance to Nearest Mooring</b></td>
-                <td>{{data.mooringDetails.[0].distanceToNearestMooring}}</td>
+                <td>{{data.mooringDetails.distanceToNearestMooring}}</td>
                 <td id='grey'><b>ID of Nearest Mooring</b></td>
-                <td>{{data.mooringDetails.[0].idOfNearestMooring}}</td>
+                <td>{{data.mooringDetails.idOfNearestMooring}}</td>
             </tr>
             <tr>
                 <td id='grey'><b>Diver</b></td>
                 <td>{{data.invites.divers.[0].name}}</td>
                 <td id='grey'><b>Inspection Date</b></td>
-                <td>{{data.mooringDetails.[0].inspectionDate}}</td>
+                <td>{{data.mooringDetails.inspectionDate}}</td>
             </tr>
 
         </table>
@@ -65,12 +65,17 @@
             </tr>
             <tr>
                 <td>Surface Buoy</td>
-                <td>{{data.inspectionDetails.[0].components.surfaceBuoy.[0].description}}</td>
-           
+                <td>{{data.inspectionDetails.surfaceBuoy.description}}</td>
+                <td>{{data.inspectionDetails.surfaceBuoy.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.surfaceBuoy.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.surfaceBuoy.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.surfaceBuoy.comments}}</td>
+
+
             </tr>
             <tr>
                 <td>SF Mooring ID Number <sup>*</sup></td>
-                <td>{{{a}}}</td>
+                <td>{{{data.mooringDetails.mooringId}}}</td>
                 <td>{{{a}}}</td>
                 <td>{{{a}}}</td>
                 <td>{{{a}}}</td>
@@ -78,99 +83,115 @@
             </tr>
             <tr>
                 <td>Disc Colour</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>{{data.inspectionDetails.discColour.description}}</td>
+                <td>{{data.inspectionDetails.discColour.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.discColour.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.discColour.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.discColour.comments}}</td>
             </tr>
             <tr>
                 <td>Labelling</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>{{data.inspectionDetails.labelling.description}}</td>
+                <td>{{data.inspectionDetails.labelling.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.labelling.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.labelling.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.labelling.comments}}</td>
             </tr>
             <tr>
                 <td>Super Tender Certified</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>{{data.inspectionDetails.superTenderCertified.description}}</td>
+                <td>{{data.inspectionDetails.superTenderCertified.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.superTenderCertified.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.superTenderCertified.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.superTenderCertified.comments}}</td>
             </tr>
             <tr>
                 <td>Max Wind Strength</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>{{data.inspectionDetails.maxWindStrength.description}}</td>
+                <td>{{data.inspectionDetails.maxWindStrength.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.maxWindStrength.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.maxWindStrength.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.maxWindStrength.comments}}</td>
             </tr>
             <tr>
                 <td>Pick up Line</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>{{data.inspectionDetails.pickUpLine.description}}</td>
+                <td>{{data.inspectionDetails.pickUpLine.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.pickUpLine.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.pickUpLine.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.pickUpLine.comments}}</td>
             </tr>
             <tr>
                 <td>Pimple Floats</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>{{data.inspectionDetails.pimpleFloats.description}}</td>
+                <td>{{data.inspectionDetails.pimpleFloats.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.pimpleFloats.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.pimpleFloats.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.pimpleFloats.comments}}</td>
             </tr>
             <tr>
-                <td>Shackle</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>Shackle 1</td>
+                <td>{{data.inspectionDetails.shackle.description}}</td>
+                <td>{{data.inspectionDetails.shackle1.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.shackle1.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.shackle1.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.shackle1.comments}}</td>
             </tr>
             <tr>
-                <td>Swivel</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>Buoy Shaft</td>
+                <td>{{data.inspectionDetails.buoyShaft.description}}</td>
+                <td>{{data.inspectionDetails.buoyShaft.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.buoyShaft.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.buoyShaft.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.buoyShaft.comments}}</td>
+            </tr>
+            <td>Shackle 2</td>
+            <td>{{data.inspectionDetails.shackle2.description}}</td>
+            <td>{{data.inspectionDetails.shackle2.2020Inspection}}</td>
+            <td>{{data.inspectionDetails.shackle2.2021Inspection}}</td>
+            <td>{{data.inspectionDetails.shackle2.sizeOfChain}}</td>
+            <td>{{data.inspectionDetails.shackle2.comments}}</td>
+            </tr>
+            <td>Swivel</td>
+            <td>{{data.inspectionDetails.swivel.description}}</td>
+            <td>{{data.inspectionDetails.swivel.2020Inspection}}</td>
+            <td>{{data.inspectionDetails.swivel.2021Inspection}}</td>
+            <td>{{data.inspectionDetails.swivel.sizeOfChain}}</td>
+            <td>{{data.inspectionDetails.swivel.comments}}</td>
             </tr>
             <tr>
                 <td>Pendant Chain</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>{{data.inspectionDetails.pendantChain.description}}</td>
+                <td>{{data.inspectionDetails.pendantChain.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.pendantChain.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.pendantChain.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.pendantChain.comments}}</td>
+            </tr>
             </tr>
             <tr>
                 <td>Sub Surface Float</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>{{data.inspectionDetails.subSurfaceFloat.description}}</td>
+                <td>{{data.inspectionDetails.subSurfaceFloat.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.subSurfaceFloat.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.subSurfaceFloat.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.subSurfaceFloat.comments}}</td>
             </tr>
             <tr>
-                <td>Shackle</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>Shackle 3</td>
+                <td>{{data.inspectionDetails.shackle3.description}}</td>
+                <td>{{data.inspectionDetails.shackle3.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.shackle3.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.shackle3.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.shackle3.comments}}</td>
             </tr>
             <tr>
                 <td>Bullring</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>{{data.inspectionDetails.bullring.description}}</td>
+                <td>{{data.inspectionDetails.bullring.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.bullring.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.bullring.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.bullring.comments}}</td>
+            </tr>
             </tr>
             <tr>
                 <td id='grey'><b>Ground Chain 1</b></td>
@@ -182,35 +203,35 @@
             </tr>
             <tr>
                 <td>Ground Chain 1</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>{{data.inspectionDetails.groundChain1.description}}</td>
+                <td>{{data.inspectionDetails.groundChain1.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.groundChain1.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.groundChain1.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.groundChain1.comments}}</td>
             </tr>
             <tr>
-                <td>Shackle to Bullring</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>Shackle to Bullring 1</td>
+                <td>{{data.inspectionDetails.shackleToBullring1.description}}</td>
+                <td>{{data.inspectionDetails.shackleToBullring1.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.shackleToBullring1.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.shackleToBullring1.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.shackleToBullring1.comments}}</td>
             </tr>
             <tr>
-                <td>Shackle to Anchor</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>Shackle to Anchor 1</td>
+                <td>{{data.inspectionDetails.shackleToAnchor1.description}}</td>
+                <td>{{data.inspectionDetails.shackleToAnchor1.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.shackleToAnchor1.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.shackleToAnchor1.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.shackleToAnchor1.comments}}</td>
             </tr>
             <tr>
-                <td>Anchor</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>Anchor 1</td>
+                <td>{{data.inspectionDetails.anchor1.description}}</td>
+                <td>{{data.inspectionDetails.anchor1.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.anchor1.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.anchor1.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.anchor1.comments}}</td>
             </tr>
             <tr>
                 <td id='grey'><b>Ground Chain 2</b></td>
@@ -222,35 +243,35 @@
             </tr>
             <tr>
                 <td>Ground Chain 2</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>{{data.inspectionDetails.groundChain2.description}}</td>
+                <td>{{data.inspectionDetails.groundChain2.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.groundChain2.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.groundChain2.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.groundChain2.comments}}</td>
             </tr>
             <tr>
-                <td>Shackle to Bullring</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>Shackle to Bullring 2</td>
+                <td>{{data.inspectionDetails.shackleToBullring2.description}}</td>
+                <td>{{data.inspectionDetails.shackleToBullring2.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.shackleToBullring2.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.shackleToBullring2.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.shackleToBullring2.comments}}</td>
             </tr>
             <tr>
-                <td>Shackle to Anchor</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>Shackle to Anchor 2</td>
+                <td>{{data.inspectionDetails.shackleToAnchor2.description}}</td>
+                <td>{{data.inspectionDetails.shackleToAnchor2.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.shackleToAnchor2.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.shackleToAnchor2.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.shackleToAnchor2.comments}}</td>
             </tr>
             <tr>
-                <td>Anchor</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>Anchor 2</td>
+                <td>{{data.inspectionDetails.anchor2.description}}</td>
+                <td>{{data.inspectionDetails.anchor2.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.anchor2.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.anchor2.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.anchor2.comments}}</td>
             </tr>
             <tr>
                 <td id='grey'><b>Ground Chain 3</b></td>
@@ -262,35 +283,35 @@
             </tr>
             <tr>
                 <td>Ground Chain 3</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>{{data.inspectionDetails.groundChain3.description}}</td>
+                <td>{{data.inspectionDetails.groundChain3.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.groundChain3.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.groundChain3.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.groundChain3.comments}}</td>
             </tr>
             <tr>
-                <td>Shackle to Bullring</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>Shackle to Bullring 3</td>
+                <td>{{data.inspectionDetails.shackleToBullring3.description}}</td>
+                <td>{{data.inspectionDetails.shackleToBullring3.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.shackleToBullring3.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.shackleToBullring2.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.shackleToBullring3.comments}}</td>
             </tr>
             <tr>
-                <td>Shackle to Anchor</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>Shackle to Anchor 3</td>
+                <td>{{data.inspectionDetails.shackleToAnchor3.description}}</td>
+                <td>{{data.inspectionDetails.shackleToAnchor3.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.shackleToAnchor3.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.shackleToAnchor3.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.shackleToAnchor3.comments}}</td>
             </tr>
             <tr>
-                <td>Anchor</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td>Anchor 3</td>
+                <td>{{data.inspectionDetails.anchor3.description}}</td>
+                <td>{{data.inspectionDetails.anchor3.2020Inspection}}</td>
+                <td>{{data.inspectionDetails.anchor3.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.anchor3.sizeOfChain}}</td>
+                <td>{{data.inspectionDetails.anchor3.comments}}</td>
             </tr>
         </table>
 
@@ -313,7 +334,7 @@
                 <td id='grey'><b>GENERAL OBSERVATION</b></td>
             </tr>
             <tr>
-                <td> <img src="mooring-buoy.png"  alt="Mooring buoy photo" /></td>
+                <td> <img src="mooring-buoy.png" alt="Mooring buoy photo" /></td>
                 <td>{{INSERT.GENERALOBSERVATION.TEXT.HERE}}</td>
             </tr>
         </table>

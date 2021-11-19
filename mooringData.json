@@ -2,8 +2,8 @@
     "What": "Mooring Inspection",
     "who": "Rottnest Island Management",
     "id": "",
-    "year":"2021",
-    "previousYear":"2020",
+    "year": "2021",
+    "previousYear": "2020",
     "displayName": "Order Mooring Inspection",
     "workCode": "",
     "lastModified": "2021-07-16T03:08:48+00:00",
@@ -65,44 +65,211 @@
                 }
             ]
         },
-        "mooringDetails": [
-            {
-                "mooringId": "RIA01",
-                "mooringControlArea": "Thomson Bay",
-                "easting": "362549.5",
-                "mmdCentre": "2.5m",
-                "northing": "6459173.6",
-                "mmdMsr": "2.3m",
-                "maxVesselLength": "14m",
-                "tonnage": "20t",
-                "maxSwingRoom": "35.1m",
-                "buoySwingRadius": "3.12m",
-                "distanceToNearestMooring": "plenty of space mate",
-                "idOfNearestMooring": "BOB",
-                "inspectionDate": "2021-11-11"
+        "mooringDetails": {
+            "mooringId": "RIA01",
+            "mooringControlArea": "Thomson Bay",
+            "easting": "362549.5",
+            "mmdCentre": "2.5m",
+            "northing": "6459173.6",
+            "mmdMsr": "2.3m",
+            "maxVesselLength": "14m",
+            "tonnage": "20t",
+            "maxSwingRoom": "35.1m",
+            "buoySwingRadius": "3.12m",
+            "distanceToNearestMooring": "plenty of space mate",
+            "idOfNearestMooring": "BOB",
+            "inspectionDate": "2021-11-11"
+        },
+        "inspectionDetails": {
+            "surfaceBuoy": {
+                "description": "Green 800mm Aualib Buoy",
+                "2020Inspection": "good",
+                "2021Inspection": "10%",
+                "sizeOfChain": "666",
+                "comments": "it still floats!"
+            },
+            "discColour": {
+                "description": "Purple",
+                "2020Inspection": "good",
+                "2021Inspection": "10%",
+                "sizeOfChain": "",
+                "comments": "still colourful"
+            },
+            "labelling": {
+                "description": "Readable",
+                "2020Inspection": "average",
+                "2021Inspection": "40%",
+                "sizeOfChain": "",
+                "comments": "Needs replacing"
+            },
+            "superTenderCertified": {
+                "description": "Up to 6.75m",
+                "2020Inspection": "yes",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "maxWindStrength": {
+                "description": "40 Knots",
+                "2020Inspection": "yes",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "pickUpLine": {
+                "description": "4m x 28mm Nylon Y",
+                "2020Inspection": "",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "pimpleFloats": {
+                "description": "",
+                "2020Inspection": "",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "shackle1": {
+                "description": "",
+                "2020Inspection": "",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "buoyShaft": {
+                "description": "1m x 19mm /S Swivel Shaft",
+                "2020Inspection": "Good",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "shackle2": {
+                "description": "",
+                "2020Inspection": "",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "swivel": {
+                "description": "16mm S/S on shaft",
+                "2020Inspection": "Good",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "pendantChain": {
+                "description": "4m x 16mm Chain",
+                "2020Inspection": "Good",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "subSurfaceFloat": {
+                "description": "300mm",
+                "2020Inspection": "Good",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "shackle3": {
+                "description": "",
+                "2020Inspection": "",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "bullring": {
+                "description": "",
+                "2020Inspection": "",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "groundChain1": {
+                "description": "",
+                "2020Inspection": "",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "shackleToBullring1": {
+                "description": "",
+                "2020Inspection": "",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "shackleToAnchor1": {
+                "description": "",
+                "2020Inspection": "",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "anchor1": {
+                "description": "",
+                "2020Inspection": "",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "groundChain2": {
+                "description": "",
+                "2020Inspection": "",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "shackleToBullring2": {
+                "description": "",
+                "2020Inspection": "",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "shackleToAnchor2": {
+                "description": "",
+                "2020Inspection": "",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "anchor2": {
+                "description": "",
+                "2020Inspection": "",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "groundChain3": {
+                "description": "",
+                "2020Inspection": "",
+                "2021Inspection": "fd",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "shackleToBullring3": {
+                "description": "",
+                "2020Inspection": "",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "shackleToAnchor3": {
+                "description": "",
+                "2020Inspection": "",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
+            },
+            "anchor3": {
+                "description": "",
+                "2020Inspection": "",
+                "2021Inspection": "",
+                "sizeOfChain": "",
+                "comments": ""
             }
-        ],
-
-        "inspectionDetails": [
-            {
-                "components":
-                {
-                    "surfaceBuoy":[
-                        {
-                            "description": "Green 800mm Aualib Buoy",
-                            "2020Inspection":"good",
-                            "2021Inspection%":"10%",
-                            "sizeOfChain":"",
-                            "comments":"it still floats!"
-                        }
-                    ],
-                    
-                    
-                   
-                    "discColour":"Purple"
-                    
-                }
-            }
-        ]
+        }
     }
 }
