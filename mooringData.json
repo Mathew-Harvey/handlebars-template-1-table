@@ -29,7 +29,7 @@
             "supplier": [
                 {
                     "id": "",
-                    "name": "Adam",
+                    "name": "Adam Falconer-West",
                     "email": "Adam@franmarine.com.au",
                     "roles": [
                         "Supplier"
@@ -277,9 +277,14 @@
                 "comments": ""
             }
         },
+        "mooringPhoto":"",
+        "generalObservation":"Generally good conidtion, some evidence of vessel strike.",
         "approvalDeclaration":{
             "safeFitForPurpose":"True",
-            "environmentallyFriendly":"False"
+            "environmentallyFriendly":"False",
+            "arrivalTime":"03:08:48",
+            "bottomTime":"35 minutes",
+            "departureTime":"04:15:00"
         }
     }
 }

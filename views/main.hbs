@@ -335,7 +335,7 @@
             </tr>
             <tr>
                 <td>{{{loadImg}}}</td>
-                <td>{{INSERT.GENERALOBSERVATION.TEXT.HERE}}</td>
+                <td>{{data.generalObservation}}</td>
             </tr>
         </table>
 
@@ -346,18 +346,18 @@
             <col style="width:60%">
             <tr>
                 <td class="noBorder"><b>MOORING IS SAFE and FIT FOR PURPOSE</b></td>
-                <td class="noBorder">APPROVED HERE{{approved.tick.goes.here}}</td>
+                <td class="noBorder">{{data.approvalDeclaration.safeFitForPurpose}}</td>
             </tr>
             <tr>
                 <td class="noBorder"><b>ENVIRONMENTALLY FRIENDLY MOORING</b></td>
-                <td class="noBorder">APPROVED HERE{{approved.tick.goes.here}}</td>
+                <td class="noBorder">{{data.approvalDeclaration.environmentallyFriendly}}</td>
             </tr>
 
         </table>
 
         <h1 style="text-decoration:underline;">MOORING CONTRACTOR DECLARATION</h1>
 
-        <p>I, Adam Falconer-West on behalf of Franmarine Underwater Services Pty Ltd certify that the abovementioned
+        <p>I, {{data.invites.supplier.[0].name}} on behalf of Franmarine Underwater Services Pty Ltd certify that the abovementioned
             mooring was inspected by our diving team in accordance with Australian Standard AS2299. The information
             contained in this Report is true and correct and the mooring is SAFE and FIT FOR PURPOSE to hold a vessel up
             to the maximum vessel length in up to 40 knot winds for 12 months from the date of this certification.</p>
@@ -367,7 +367,7 @@
             <col style="width:50%">
             <tr>
                 <td style="text-decoration:underline;" class="signatureBox"><b>Signed:</b></td>
-                <td style="text-decoration:underline;" class="signatureBox"><b>Date:</b></td>
+                <td style="text-decoration:underline;" class="signatureBox"><b>Date:  {{{todaysDate}}}</b></td>
             </tr>
         </table>
 
@@ -380,11 +380,11 @@
             <col style="width:15.6%">
             <tr>
                 <td id="grey"><b>Arrival Time</b></td>
-                <td><b>{{arrive.time}}</b></td>
+                <td><b>{{data.approvalDeclaration.arrivalTime}}</b></td>
                 <td id="grey"><b>Bottom Time</b></td>
-                <td><b>{{bottom.time}}</b></td>
+                <td><b>{{data.approvalDeclaration.bottomTime}}</b></td>
                 <td id="grey"><b>Departure Time</b></td>
-                <td><b>{{departure.time}}</b></td>
+                <td><b>{{data.approvalDeclaration.departureTime}}</b></td>
 
 
             </tr>
