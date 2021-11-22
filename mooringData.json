@@ -276,6 +276,10 @@
                 "sizeOfChain": "",
                 "comments": ""
             }
+        },
+        "approvalDeclaration":{
+            "safeFitForPurpose":"True",
+            "environmentallyFriendly":"False"
         }
     }
 }
