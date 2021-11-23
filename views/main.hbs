@@ -49,7 +49,7 @@
                 <td id='grey'><b>Diver</b></td>
                 <td>{{data.invites.divers.[0].name}}</td>
                 <td id='grey'><b>Inspection Date</b></td>
-                <td>{{data.mooringDetails.inspectionDate}}</td>
+                <td>{{inspectionDate}}</td>
             </tr>
 
         </table>
@@ -66,8 +66,8 @@
             <tr>
                 <td>Surface Buoy</td>
                 <td>{{data.inspectionDetails.surfaceBuoy.description}}</td>
-                <td>{{data.inspectionDetails.surfaceBuoy.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.surfaceBuoy.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.surfaceBuoy.previousInspection}}</td>
+                <td>{{data.inspectionDetails.surfaceBuoy.currentInspection}}{{buriedStatusSurfacebuoy}}</td>
                 <td>{{data.inspectionDetails.surfaceBuoy.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.surfaceBuoy.comments}}</td>
 
@@ -76,94 +76,94 @@
             <tr>
                 <td>SF Mooring ID Number <sup>*</sup></td>
                 <td>{{{data.mooringDetails.mooringId}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
-                <td>{{{a}}}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td>Disc Colour</td>
                 <td>{{data.inspectionDetails.discColour.description}}</td>
-                <td>{{data.inspectionDetails.discColour.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.discColour.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.discColour.previousInspection}}</td>
+                <td>{{data.inspectionDetails.discColour.currentInspection}}</td>
                 <td>{{data.inspectionDetails.discColour.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.discColour.comments}}</td>
             </tr>
             <tr>
                 <td>Labelling</td>
                 <td>{{data.inspectionDetails.labelling.description}}</td>
-                <td>{{data.inspectionDetails.labelling.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.labelling.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.labelling.previousInspection}}</td>
+                <td>{{data.inspectionDetails.labelling.currentInspection}}</td>
                 <td>{{data.inspectionDetails.labelling.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.labelling.comments}}</td>
             </tr>
             <tr>
                 <td>Super Tender Certified</td>
                 <td>{{data.inspectionDetails.superTenderCertified.description}}</td>
-                <td>{{data.inspectionDetails.superTenderCertified.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.superTenderCertified.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.superTenderCertified.previousInspection}}</td>
+                <td>{{data.inspectionDetails.superTenderCertified.currentInspection}}</td>
                 <td>{{data.inspectionDetails.superTenderCertified.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.superTenderCertified.comments}}</td>
             </tr>
             <tr>
                 <td>Max Wind Strength</td>
                 <td>{{data.inspectionDetails.maxWindStrength.description}}</td>
-                <td>{{data.inspectionDetails.maxWindStrength.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.maxWindStrength.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.maxWindStrength.previousInspection}}</td>
+                <td>{{data.inspectionDetails.maxWindStrength.currentInspection}}</td>
                 <td>{{data.inspectionDetails.maxWindStrength.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.maxWindStrength.comments}}</td>
             </tr>
             <tr>
                 <td>Pick up Line</td>
                 <td>{{data.inspectionDetails.pickUpLine.description}}</td>
-                <td>{{data.inspectionDetails.pickUpLine.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.pickUpLine.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.pickUpLine.previousInspection}}</td>
+                <td>{{data.inspectionDetails.pickUpLine.currentInspection}} {{buriedStatusPickupLine}}</td>
                 <td>{{data.inspectionDetails.pickUpLine.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.pickUpLine.comments}}</td>
             </tr>
             <tr>
                 <td>Pimple Floats</td>
                 <td>{{data.inspectionDetails.pimpleFloats.description}}</td>
-                <td>{{data.inspectionDetails.pimpleFloats.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.pimpleFloats.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.pimpleFloats.previousInspection}}</td>
+                <td>{{data.inspectionDetails.pimpleFloats.currentInspection}}</td>
                 <td>{{data.inspectionDetails.pimpleFloats.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.pimpleFloats.comments}}</td>
             </tr>
             <tr>
                 <td>Shackle 1</td>
                 <td>{{data.inspectionDetails.shackle.description}}</td>
-                <td>{{data.inspectionDetails.shackle1.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.shackle1.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.shackle1.previousInspection}}</td>
+                <td>{{data.inspectionDetails.shackle1.currentInspection}}</td>
                 <td>{{data.inspectionDetails.shackle1.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.shackle1.comments}}</td>
             </tr>
             <tr>
                 <td>Buoy Shaft</td>
                 <td>{{data.inspectionDetails.buoyShaft.description}}</td>
-                <td>{{data.inspectionDetails.buoyShaft.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.buoyShaft.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.buoyShaft.previousInspection}}</td>
+                <td>{{data.inspectionDetails.buoyShaft.currentInspection}}</td>
                 <td>{{data.inspectionDetails.buoyShaft.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.buoyShaft.comments}}</td>
             </tr>
             <td>Shackle 2</td>
             <td>{{data.inspectionDetails.shackle2.description}}</td>
-            <td>{{data.inspectionDetails.shackle2.2020Inspection}}</td>
-            <td>{{data.inspectionDetails.shackle2.2021Inspection}}</td>
+            <td>{{data.inspectionDetails.shackle2.previousInspection}}</td>
+            <td>{{data.inspectionDetails.shackle2.currentInspection}}</td>
             <td>{{data.inspectionDetails.shackle2.sizeOfChain}}</td>
             <td>{{data.inspectionDetails.shackle2.comments}}</td>
             </tr>
             <td>Swivel</td>
             <td>{{data.inspectionDetails.swivel.description}}</td>
-            <td>{{data.inspectionDetails.swivel.2020Inspection}}</td>
-            <td>{{data.inspectionDetails.swivel.2021Inspection}}</td>
+            <td>{{data.inspectionDetails.swivel.previousInspection}}</td>
+            <td>{{data.inspectionDetails.swivel.currentInspection}}</td>
             <td>{{data.inspectionDetails.swivel.sizeOfChain}}</td>
             <td>{{data.inspectionDetails.swivel.comments}}</td>
             </tr>
             <tr>
                 <td>Pendant Chain</td>
                 <td>{{data.inspectionDetails.pendantChain.description}}</td>
-                <td>{{data.inspectionDetails.pendantChain.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.pendantChain.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.pendantChain.previousInspection}}</td>
+                <td>{{data.inspectionDetails.pendantChain.currentInspection}}</td>
                 <td>{{data.inspectionDetails.pendantChain.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.pendantChain.comments}}</td>
             </tr>
@@ -171,24 +171,24 @@
             <tr>
                 <td>Sub Surface Float</td>
                 <td>{{data.inspectionDetails.subSurfaceFloat.description}}</td>
-                <td>{{data.inspectionDetails.subSurfaceFloat.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.subSurfaceFloat.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.subSurfaceFloat.previousInspection}}</td>
+                <td>{{data.inspectionDetails.subSurfaceFloat.currentInspection}}</td>
                 <td>{{data.inspectionDetails.subSurfaceFloat.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.subSurfaceFloat.comments}}</td>
             </tr>
             <tr>
                 <td>Shackle 3</td>
                 <td>{{data.inspectionDetails.shackle3.description}}</td>
-                <td>{{data.inspectionDetails.shackle3.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.shackle3.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.shackle3.previousInspection}}</td>
+                <td>{{data.inspectionDetails.shackle3.currentInspection}}</td>
                 <td>{{data.inspectionDetails.shackle3.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.shackle3.comments}}</td>
             </tr>
             <tr>
                 <td>Bullring</td>
                 <td>{{data.inspectionDetails.bullring.description}}</td>
-                <td>{{data.inspectionDetails.bullring.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.bullring.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.bullring.previousInspection}}</td>
+                <td>{{data.inspectionDetails.bullring.currentInspection}}</td>
                 <td>{{data.inspectionDetails.bullring.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.bullring.comments}}</td>
             </tr>
@@ -204,32 +204,32 @@
             <tr>
                 <td>Ground Chain 1</td>
                 <td>{{data.inspectionDetails.groundChain1.description}}</td>
-                <td>{{data.inspectionDetails.groundChain1.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.groundChain1.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.groundChain1.previousInspection}}</td>
+                <td>{{data.inspectionDetails.groundChain1.currentInspection}}</td>
                 <td>{{data.inspectionDetails.groundChain1.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.groundChain1.comments}}</td>
             </tr>
             <tr>
                 <td>Shackle to Bullring 1</td>
                 <td>{{data.inspectionDetails.shackleToBullring1.description}}</td>
-                <td>{{data.inspectionDetails.shackleToBullring1.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.shackleToBullring1.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.shackleToBullring1.previousInspection}}</td>
+                <td>{{data.inspectionDetails.shackleToBullring1.currentInspection}}</td>
                 <td>{{data.inspectionDetails.shackleToBullring1.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.shackleToBullring1.comments}}</td>
             </tr>
             <tr>
                 <td>Shackle to Anchor 1</td>
                 <td>{{data.inspectionDetails.shackleToAnchor1.description}}</td>
-                <td>{{data.inspectionDetails.shackleToAnchor1.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.shackleToAnchor1.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.shackleToAnchor1.previousInspection}}</td>
+                <td>{{data.inspectionDetails.shackleToAnchor1.currentInspection}}</td>
                 <td>{{data.inspectionDetails.shackleToAnchor1.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.shackleToAnchor1.comments}}</td>
             </tr>
             <tr>
                 <td>Anchor 1</td>
                 <td>{{data.inspectionDetails.anchor1.description}}</td>
-                <td>{{data.inspectionDetails.anchor1.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.anchor1.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.anchor1.previousInspection}}</td>
+                <td>{{data.inspectionDetails.anchor1.currentInspection}}</td>
                 <td>{{data.inspectionDetails.anchor1.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.anchor1.comments}}</td>
             </tr>
@@ -244,32 +244,33 @@
             <tr>
                 <td>Ground Chain 2</td>
                 <td>{{data.inspectionDetails.groundChain2.description}}</td>
-                <td>{{data.inspectionDetails.groundChain2.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.groundChain2.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.groundChain2.previousInspection}}</td>
+                <td>{{data.inspectionDetails.groundChain2.currentInspection}}</td>
                 <td>{{data.inspectionDetails.groundChain2.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.groundChain2.comments}}</td>
             </tr>
             <tr>
                 <td>Shackle to Bullring 2</td>
                 <td>{{data.inspectionDetails.shackleToBullring2.description}}</td>
-                <td>{{data.inspectionDetails.shackleToBullring2.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.shackleToBullring2.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.shackleToBullring2.previousInspection}}</td>
+                <td>{{data.inspectionDetails.shackleToBullring2.currentInspection}} {{buriedStatusBullring2}}</td>
+     
                 <td>{{data.inspectionDetails.shackleToBullring2.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.shackleToBullring2.comments}}</td>
             </tr>
             <tr>
                 <td>Shackle to Anchor 2</td>
                 <td>{{data.inspectionDetails.shackleToAnchor2.description}}</td>
-                <td>{{data.inspectionDetails.shackleToAnchor2.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.shackleToAnchor2.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.shackleToAnchor2.previousInspection}}</td>
+                <td>{{data.inspectionDetails.shackleToAnchor2.currentInspection}} {{buriedStatusBullring2}}</td>
                 <td>{{data.inspectionDetails.shackleToAnchor2.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.shackleToAnchor2.comments}}</td>
             </tr>
             <tr>
                 <td>Anchor 2</td>
                 <td>{{data.inspectionDetails.anchor2.description}}</td>
-                <td>{{data.inspectionDetails.anchor2.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.anchor2.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.anchor2.previousInspection}}</td>
+                <td>{{data.inspectionDetails.anchor2.currentInspection}}</td>
                 <td>{{data.inspectionDetails.anchor2.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.anchor2.comments}}</td>
             </tr>
@@ -284,32 +285,32 @@
             <tr>
                 <td>Ground Chain 3</td>
                 <td>{{data.inspectionDetails.groundChain3.description}}</td>
-                <td>{{data.inspectionDetails.groundChain3.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.groundChain3.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.groundChain3.previousInspection}}</td>
+                <td>{{data.inspectionDetails.groundChain3.currentInspection}}</td>
                 <td>{{data.inspectionDetails.groundChain3.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.groundChain3.comments}}</td>
             </tr>
             <tr>
                 <td>Shackle to Bullring 3</td>
                 <td>{{data.inspectionDetails.shackleToBullring3.description}}</td>
-                <td>{{data.inspectionDetails.shackleToBullring3.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.shackleToBullring3.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.shackleToBullring3.previousInspection}}</td>
+                <td>{{data.inspectionDetails.shackleToBullring3.currentInspection}}</td>
                 <td>{{data.inspectionDetails.shackleToBullring2.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.shackleToBullring3.comments}}</td>
             </tr>
             <tr>
                 <td>Shackle to Anchor 3</td>
                 <td>{{data.inspectionDetails.shackleToAnchor3.description}}</td>
-                <td>{{data.inspectionDetails.shackleToAnchor3.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.shackleToAnchor3.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.shackleToAnchor3.previousInspection}}</td>
+                <td>{{data.inspectionDetails.shackleToAnchor3.currentInspection}}</td>
                 <td>{{data.inspectionDetails.shackleToAnchor3.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.shackleToAnchor3.comments}}</td>
             </tr>
             <tr>
                 <td>Anchor 3</td>
                 <td>{{data.inspectionDetails.anchor3.description}}</td>
-                <td>{{data.inspectionDetails.anchor3.2020Inspection}}</td>
-                <td>{{data.inspectionDetails.anchor3.2021Inspection}}</td>
+                <td>{{data.inspectionDetails.anchor3.previousInspection}}</td>
+                <td>{{data.inspectionDetails.anchor3.currentInspection}}</td>
                 <td>{{data.inspectionDetails.anchor3.sizeOfChain}}</td>
                 <td>{{data.inspectionDetails.anchor3.comments}}</td>
             </tr>
@@ -334,7 +335,7 @@
                 <td id='grey'><b>GENERAL OBSERVATION</b></td>
             </tr>
             <tr>
-                <td>{{{loadImg}}}</td>
+                <td>{{{loadImg attachments.0.fullUri}}} </td>
                 <td>{{data.generalObservation}}</td>
             </tr>
         </table>
@@ -357,7 +358,8 @@
 
         <h1 style="text-decoration:underline;">MOORING CONTRACTOR DECLARATION</h1>
 
-        <p>I, {{data.invites.supplier.[0].name}} on behalf of Franmarine Underwater Services Pty Ltd certify that the abovementioned
+        <p>I, {{data.invites.supplier.[0].name}} on behalf of Franmarine Underwater Services Pty Ltd certify that the
+            abovementioned
             mooring was inspected by our diving team in accordance with Australian Standard AS2299. The information
             contained in this Report is true and correct and the mooring is SAFE and FIT FOR PURPOSE to hold a vessel up
             to the maximum vessel length in up to 40 knot winds for 12 months from the date of this certification.</p>
@@ -367,7 +369,7 @@
             <col style="width:50%">
             <tr>
                 <td style="text-decoration:underline;" class="signatureBox"><b>Signed:</b></td>
-                <td style="text-decoration:underline;" class="signatureBox"><b>Date:  {{{todaysDate}}}</b></td>
+                <td style="text-decoration:underline;" class="signatureBox"><b>Date: {{{todaysDate}}}</b></td>
             </tr>
         </table>
 
@@ -380,11 +382,11 @@
             <col style="width:15.6%">
             <tr>
                 <td id="grey"><b>Arrival Time</b></td>
-                <td><b>{{data.approvalDeclaration.arrivalTime}}</b></td>
+                <td><b>{{arrivalTime}}</b></td>
                 <td id="grey"><b>Bottom Time</b></td>
                 <td><b>{{data.approvalDeclaration.bottomTime}}</b></td>
                 <td id="grey"><b>Departure Time</b></td>
-                <td><b>{{data.approvalDeclaration.departureTime}}</b></td>
+                <td><b>{{departureTime}}</b></td>
 
 
             </tr>

@@ -3,17 +3,16 @@
     "What": "Mooring Inspection",
     "who": "Rottnest Island Management",
     "id": "",
-    "year": "2021",
-    "previousYear": "2020",
     "displayName": "Order Mooring Inspection",
     "workCode": "",
     "lastModified": "2021-07-16T03:08:48+00:00",
     "messages": null,
-    "attachements":[
+    "attachments":[
         {
-            "fullUri":""
+            "fullUri":"img uri goes here"
         }
-    ],
+    ]
+    ,
     "data": {
         "invites": {
             "buyer": [
@@ -84,195 +83,221 @@
             "buoySwingRadius": "3.12m",
             "distanceToNearestMooring": "plenty of space mate",
             "idOfNearestMooring": "BOB",
-            "inspectionDate": "2021-11-11"
+            "inspectionDate": "2021-11-10T13:08:48.000+00:00"
         },
         "inspectionDetails": {
             "surfaceBuoy": {
                 "description": "Green 800mm Aualib Buoy",
-                "2020Inspection": "good",
-                "2021Inspection": "10%",
+                "previousInspection": "20",
+                "currentInspection": "10",
+                "buried":"true",
                 "sizeOfChain": "666",
                 "comments": "it still floats!"
             },
             "discColour": {
                 "description": "Purple",
-                "2020Inspection": "good",
-                "2021Inspection": "10%",
+                "previousInspection": "5",
+                "currentInspection": "10",
+                "buried":"",
                 "sizeOfChain": "",
                 "comments": "still colourful"
             },
             "labelling": {
                 "description": "Readable",
-                "2020Inspection": "average",
-                "2021Inspection": "40%",
+                "previousInspection": "30",
+                "currentInspection": "40",
+                "buried":"",
                 "sizeOfChain": "",
                 "comments": "Needs replacing"
             },
             "superTenderCertified": {
                 "description": "Up to 6.75m",
-                "2020Inspection": "yes",
-                "2021Inspection": "",
+                "previousInspection": "",
+                "currentInspection": "",
+                "buried":"",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "maxWindStrength": {
                 "description": "40 Knots",
-                "2020Inspection": "yes",
-                "2021Inspection": "",
+                "previousInspection": "",
+                "currentInspection": "",
+                "buried":"",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "pickUpLine": {
                 "description": "4m x 28mm Nylon Y",
-                "2020Inspection": "",
-                "2021Inspection": "",
+                "previousInspection": "35",
+                "currentInspection": "40",
+                "buried":"false",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "pimpleFloats": {
                 "description": "",
-                "2020Inspection": "",
-                "2021Inspection": "",
+                "previousInspection": "",
+                "currentInspection": "",
+                "buried":"True",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "shackle1": {
                 "description": "",
-                "2020Inspection": "",
-                "2021Inspection": "",
+                "previousInspection": "",
+                "currentInspection": "",
+                "buried":"True",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "buoyShaft": {
                 "description": "1m x 19mm /S Swivel Shaft",
-                "2020Inspection": "Good",
-                "2021Inspection": "",
+                "previousInspection": "10",
+                "currentInspection": "",
+                "buried":"False",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "shackle2": {
                 "description": "",
-                "2020Inspection": "",
-                "2021Inspection": "",
+                "previousInspection": "",
+                "currentInspection": "",
+                "buried":"True",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "swivel": {
                 "description": "16mm S/S on shaft",
-                "2020Inspection": "Good",
-                "2021Inspection": "",
+                "previousInspection": "Good",
+                "currentInspection": "",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "pendantChain": {
                 "description": "4m x 16mm Chain",
-                "2020Inspection": "Good",
-                "2021Inspection": "",
+                "previousInspection": "Good",
+                "currentInspection": "",
+                "buried":"False",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "subSurfaceFloat": {
                 "description": "300mm",
-                "2020Inspection": "Good",
-                "2021Inspection": "",
+                "previousInspection": "5",
+                "currentInspection": "",
+                "buried":"False",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "shackle3": {
                 "description": "",
-                "2020Inspection": "",
-                "2021Inspection": "",
+                "previousInspection": "",
+                "currentInspection": "",
+                "buried":"True",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "bullring": {
                 "description": "",
                 "2020Inspection": "",
-                "2021Inspection": "",
+                "currentInspection": "",
+                "buried":"False",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "groundChain1": {
                 "description": "",
-                "2020Inspection": "",
-                "2021Inspection": "",
+                "previousInspection": "",
+                "currentInspection": "",
+                "buried":"True",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "shackleToBullring1": {
                 "description": "",
-                "2020Inspection": "",
-                "2021Inspection": "",
+                "previousInspection": "",
+                "currentInspection": "",
+                "buried":"True",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "shackleToAnchor1": {
                 "description": "",
-                "2020Inspection": "",
+                "previousInspection": "",
                 "2021Inspection": "",
+                "buried":"True",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "anchor1": {
                 "description": "",
-                "2020Inspection": "",
-                "2021Inspection": "",
+                "previousInspection": "",
+                "currentInspection": "",
+                
                 "sizeOfChain": "",
                 "comments": ""
             },
             "groundChain2": {
                 "description": "",
-                "2020Inspection": "",
-                "2021Inspection": "",
+                "previousInspection": "",
+                "currentInspection": "",
+                "buried":"True",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "shackleToBullring2": {
                 "description": "",
-                "2020Inspection": "",
-                "2021Inspection": "",
+                "previousInspection": "50",
+                "currentInspection": "34",
+                "buried":"True",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "shackleToAnchor2": {
                 "description": "",
-                "2020Inspection": "",
-                "2021Inspection": "",
+                "previousInspection": "",
+                "currentInspection": "",
+                "buried":"True",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "anchor2": {
                 "description": "",
-                "2020Inspection": "",
-                "2021Inspection": "",
+                "previousInspection": "",
+                "currentInspection": "",
+                "buried":"false",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "groundChain3": {
                 "description": "",
-                "2020Inspection": "",
-                "2021Inspection": "fd",
+                "previousInspection": "",
+                "currentInspection": "25",
+                "buried":"True",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "shackleToBullring3": {
                 "description": "",
-                "2020Inspection": "",
-                "2021Inspection": "",
+                "previousInspection": "",
+                "currentInspection": "",
+                "buried":"False",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "shackleToAnchor3": {
                 "description": "",
-                "2020Inspection": "",
-                "2021Inspection": "",
+                "previousInspection": "",
+                "currentInspection": "",
+                "buried":"True",
                 "sizeOfChain": "",
                 "comments": ""
             },
             "anchor3": {
                 "description": "",
-                "2020Inspection": "",
-                "2021Inspection": "",
+                "previousInspection": "",
+                "currentInspection": "",
+                "buried":"True",
                 "sizeOfChain": "",
                 "comments": ""
             }
@@ -282,9 +307,17 @@
         "approvalDeclaration":{
             "safeFitForPurpose":"True",
             "environmentallyFriendly":"False",
-            "arrivalTime":"03:08:48",
+            "arrivalTime":{
+                "date":"2021-11-10T13:08:48.000+00:00",
+                "offset": 480,
+                "ticks" : 657234232343
+            },
             "bottomTime":"35 minutes",
-            "departureTime":"04:15:00"
+            "departureTime":{
+                "date":"2021-11-10T17:11:48.000+00:00",
+                "offset": 480,
+                "ticks" : 657234232343
+            }
         }
     }
 }
