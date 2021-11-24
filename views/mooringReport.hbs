@@ -1,3 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 1.3em;
+            text-transform: uppercase;
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 3px;
+        }
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            border: 1px solid black;
+        }
+        .noBorder {
+            border: none !important;
+           padding-top: 50px;
+           padding-bottom: 50px;
+            
+        }
+        .signatureBox {
+  
+            padding-bottom: 70px;
+        }
+        #grey {
+            background-color: #dddddd;
+        }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mooring Inspection Report</title>
+    {{#each css}}
+    <link rel="stylesheet" href="/{{this}}">
+    {{/each}}
+</head>
+<body>
+  <header>
+   {{{loadLogoImage attachments.0.fullUri}}}
+</header>
 <main> 
     <h1>Mooring Inspection Report</h1>
 
@@ -49,7 +100,7 @@
                 <td id='grey'><b>Diver</b></td>
                 <td>{{data.invites.divers.[0].name}}</td>
                 <td id='grey'><b>Inspection Date</b></td>
-                <td>{{inspectionDate}}</td>
+                <td>{{formatDateTime data.approvalDeclaration.inspectionDate.date "dddd DD MMMM YYYY"}}</td>
             </tr>
 
         </table>
@@ -315,7 +366,11 @@
                 <td>{{data.inspectionDetails.anchor3.comments}}</td>
             </tr>
         </table>
-
+<script>
+    alert(){
+        return "Hello World"
+    }
+</script>
         <table>
             <col style="width:50%">
             <col style="width:50%">
@@ -335,7 +390,7 @@
                 <td id='grey'><b>GENERAL OBSERVATION</b></td>
             </tr>
             <tr>
-                <td>{{{loadImg attachments.0.fullUri}}} </td>
+                <td>{{{loadImage attachments.0.fullUri}}} </td>
                 <td>{{data.generalObservation}}</td>
             </tr>
         </table>
@@ -359,8 +414,7 @@
         <h1 style="text-decoration:underline;">MOORING CONTRACTOR DECLARATION</h1>
 
         <p>I, {{data.invites.supplier.[0].name}} on behalf of Franmarine Underwater Services Pty Ltd certify that the
-            abovementioned
-            mooring was inspected by our diving team in accordance with Australian Standard AS2299. The information
+            abovementioned mooring was inspected by our diving team in accordance with Australian Standard AS2299. The information
             contained in this Report is true and correct and the mooring is SAFE and FIT FOR PURPOSE to hold a vessel up
             to the maximum vessel length in up to 40 knot winds for 12 months from the date of this certification.</p>
 
@@ -382,11 +436,11 @@
             <col style="width:15.6%">
             <tr>
                 <td id="grey"><b>Arrival Time</b></td>
-                <td><b>{{arrivalTime}}</b></td>
+                <td><b>{{formatDateTime data.approvalDeclaration.arrivalTime.date "HH:mm"}}</b></td>
                 <td id="grey"><b>Bottom Time</b></td>
                 <td><b>{{data.approvalDeclaration.bottomTime}}</b></td>
                 <td id="grey"><b>Departure Time</b></td>
-                <td><b>{{departureTime}}</b></td>
+                <td><b>{{formatDateTime data.approvalDeclaration.departureTime.date "HH:mm"}}</b></td>
 
 
             </tr>
@@ -395,3 +449,10 @@
 
 
 </main>
+    {{!-- {{> footer}} --}}
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src='/index.js'></script>
+
+</body>

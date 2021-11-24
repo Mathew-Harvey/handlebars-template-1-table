@@ -9,7 +9,12 @@
     "messages": null,
     "attachments":[
         {
-            "fullUri":"img uri goes here"
+            "fullUri":"img uri goes here",
+            "path":"clientLogo"
+        },
+        {
+            "fullUri":"img uri goes here",
+            "path":"asset"
         }
     ]
     ,
