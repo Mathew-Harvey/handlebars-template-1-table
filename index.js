@@ -23,7 +23,7 @@ app.engine("hbs", exphbs({
     extname: "hbs",
     defaultLayout: "mooringReport",
     layoutsDir: __dirname + "/views/",
-    partialsDir: __dirname + "/views/",
+
 
         //helper functions 
     helpers: {
